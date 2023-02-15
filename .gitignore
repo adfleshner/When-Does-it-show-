@@ -1,0 +1,7 @@
+.gradle/
+.idea/
+keys/
+keystore.jks
+local.properties
+gradle/
+gradlew*
