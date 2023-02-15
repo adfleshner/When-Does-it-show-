@@ -13,7 +13,7 @@ I hereby state, to the best of my knowledge and belief, that I have not programm
 
 The list of permissions required by the app can be found in the `AndroidManifest.xml` file:
 
-
+https://github.com/adfleshner/When-Does-it-show-/blob/main/app/src/main/AndroidManifest.xml
 
 <br/>
 

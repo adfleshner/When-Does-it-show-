@@ -5,3 +5,4 @@ keystore.jks
 local.properties
 gradle/
 gradlew*
+*.aab
