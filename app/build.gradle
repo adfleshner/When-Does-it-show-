@@ -43,9 +43,9 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
     // Commenting out the Play billing Library in the main branch to see if that has anything to do with the in-app purchases section in the play store.
-//    // Billing
-//    def billing_version = "5.0.0"
-//
-//    implementation "com.android.billingclient:billing:$billing_version"
+    // Billing
+    def billing_version = "5.0.0"
+
+    implementation "com.android.billingclient:billing:$billing_version"
 
 }
