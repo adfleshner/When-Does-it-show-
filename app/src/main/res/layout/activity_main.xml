@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:text="This is strictly a test app that I am creating to answer a question."
+        android:text="This is strictly a test app that I am creating to answer a question. The  Billing lib is currently in the internal track, this is another prod release that I want to push to see if any track having that lib enables the 'In app section'"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
