@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:text="This is strictly a test app that I am creating to answer a question. The  Billing lib is currently in the internal track, this is another prod release that I want to push to see if any track having that lib enables the 'In app section'"
+        android:text="This is strictly a test app that I am creating to answer a question.Finally pulling everything together. And releasing on prod. ( PS this code does not have purchase verifying or acknowledging so you will not get charged )"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,6 +38,6 @@
         app:layout_constraintStart_toStartOf="parent"
         android:enabled="false"
         app:layout_constraintTop_toBottomOf="@+id/text1"
-        android:text="Buy sub"/>
+        android:text="Start sub buy flow"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
