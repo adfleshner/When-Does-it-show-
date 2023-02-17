@@ -29,4 +29,15 @@
         app:layout_constraintTop_toBottomOf="@+id/text1"
         app:layout_constraintVertical_bias="0.0" />
 
+    <Button
+        android:id="@+id/buy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:enabled="false"
+        app:layout_constraintTop_toBottomOf="@+id/text1"
+        android:text="Buy sub"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

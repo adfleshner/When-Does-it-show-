@@ -11,8 +11,8 @@ android {
         applicationId "com.flesh.questions.whendoesitshow"
         minSdk 24
         targetSdk 33
-        versionCode 4
-        versionName "2.0"
+        versionCode 6
+        versionName "2.1"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -34,12 +34,26 @@ android {
 
 dependencies {
 
-    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.core:core-ktx:1.9.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.8.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    implementation 'androidx.activity:activity-ktx:1.6.1'
+
+
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.5.3'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.5.3'
+
+    // Commenting out the Play billing Library in the main branch to see if that has anything to do with the in-app purchases section in the play store.
+    // Billing
+    def billing_version = "5.1.0"
+
+    implementation "com.android.billingclient:billing:$billing_version"
+    implementation "com.android.billingclient:billing-ktx:$billing_version"
+
 
 }
