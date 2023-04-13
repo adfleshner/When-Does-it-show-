@@ -153,7 +153,7 @@ class MainActivity : AppCompatActivity(), PurchasesUpdatedListener {
         subscriptionOfferDetails?.let {
 
             // get all the offers for the tag provided
-            val offers = retrieveEligibleOffers(offerDetails = subscriptionOfferDetails, tag = "check ")
+            val offers = retrieveEligibleOffers(offerDetails = subscriptionOfferDetails, tag = "check")
 
             Log.d(TAG, "Available offers from the ${productDetails!!.title}: ${offers.toReadableString()}")
 
@@ -202,7 +202,7 @@ private fun retrieveEligibleOffers(
     }
 
     private fun lookForNONDeveloperDeteriminedOffers(offerDetails: List<ProductDetails.SubscriptionOfferDetails>) : String{
-        var offerToken = String()
+        var offerToken = ""
         var leastPricedOffer: ProductDetails.SubscriptionOfferDetails
         var lowestPrice = Int.MAX_VALUE
         for (offer in offerDetails) {
@@ -218,14 +218,12 @@ private fun retrieveEligibleOffers(
         return offerToken
     }
     private fun lookForDeveloperDeteriminedOffers(offerDetails: List<ProductDetails.SubscriptionOfferDetails>, offerTag :String) : String{
-        var offerToken = String()
+        var offerToken = ""
         var leastPricedOffer: ProductDetails.SubscriptionOfferDetails
-        var lowestPrice = Int.MAX_VALUE
         for (offer in offerDetails) {
             Log.d(TAG, "OfferID : ${offer.offerId}")
             for (price in offer.pricingPhases.pricingPhaseList) {
                 if (offer.offerTags.contains(offerTag)) {
-                    lowestPrice = price.priceAmountMicros.toInt()
                     leastPricedOffer = offer
                     offerToken = leastPricedOffer.offerToken
                 }
